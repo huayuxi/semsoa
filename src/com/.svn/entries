@@ -1,0 +1,46 @@
+10
+
+dir
+3920
+svn://192.168.16.29/top/semsv3/codes/trunk/semsoa/src/com
+svn://192.168.16.29/top
+
+
+
+2013-08-07T09:24:55.800250Z
+3917
+ltz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+518730aa-f4b4-a249-9b6e-ab5a4dbc0f4a
+
+model
+dir
+
+service
+dir
+
+dao
+dir
+
+bean
+dir
+
+action
+dir
+
+util
+dir
+
