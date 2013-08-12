@@ -1,0 +1,44 @@
+.td-jmesa {
+	float: left;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: normal;
+	display: block;
+}
+
+.t_list_info{
+	font-size:12px;
+}
+.t_list_info th,.t_list_info td{
+	height:24px;
+	padding:2px 5px;
+	color:#434343;
+	border:1px #ffffff solid;
+	border-bottom:0;
+	border-right:0;
+}
+.t_list_info tr.toolbar td {padding-bottom:5px;}
+.t_list_info tr.header{
+	background:#efefef;
+	color:#434343;
+	text-align:center;
+	font-weight:bold;
+	line-height:24px;
+}
+tr.odd{
+	background:#F4FBF4;
+}
+tr.even{
+	background:#ffffff;
+}
+tr.even_center{
+	background:#ffffff;
+	text-align:center;
+}
+tr.statusBar{
+	background:#DBEEFF;
+}
+tr.highlight{
+	background:#DBEEFF;
+}
+tr.statusBar td{ text-align:left;}

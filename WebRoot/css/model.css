@@ -1,0 +1,123 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------------------------header-------------------------------*/
+#header
+{
+   width:100%;
+   height:50px;
+   position:relative;
+}
+.t_top td{
+	vertical-align:top;
+	}
+.top_middle,.top_right{
+	height:50px;
+	padding-left:30px;
+	background:#FCAA2D;
+	}
+	
+.top_middle a{
+	display:block;
+	float:left;
+	width:50px;
+	height:50px;
+	margin:0 4px;
+	}
+.top_middle a.btn_home{
+	background:url(../Images/btn_home_off.jpg) no-repeat;
+	}
+.top_middle a.btn_home:hover{
+	background:url(../Images/btn_home_on.jpg) no-repeat;
+	}
+	
+.top_middle a.btn_backward{
+	background:url(../Images/btn_backward_off.jpg) no-repeat;
+	}
+.top_middle a.btn_backward:hover{
+	background:url(../Images/btn_backward_on.jpg) no-repeat;
+	}	
+
+.top_middle a.btn_forward{
+	background:url(../Images/btn_forward_off.jpg) no-repeat;
+	}
+.top_middle a.btn_forward:hover{
+	background:url(../Images/btn_forward_on.jpg) no-repeat;
+	}
+
+.top_middle a.btn_reload{
+	background:url(../Images/btn_reload_off.jpg) no-repeat;
+	}
+.top_middle a.btn_reload:hover{
+	background:url(../Images/btn_reload_on.jpg) no-repeat;
+	}
+
+.top_right{
+	width:340px;
+	}
+.top_right span{
+	display:block;
+	float:right;
+	clear:both;
+	height:16px;
+	line-height:16px;
+	color:#FFF;
+	padding-right:10px;
+	margin-top:6px;
+	}
+.top_right span.exit{
+	background:url(../Images/ico_exit.jpg) no-repeat left center;
+	padding-left:16px;
+	}
+.top_right span.exit a{
+	color:#FFF;
+	text-decoration:none;
+	}
+.top_right span.exit a:hover{
+	color:#FFF;
+	text-decoration:underline;
+	}
+.top_right span.userInfo{
+	color:#434343;
+	background:url(../Images/ico_user.jpg) no-repeat left center;
+	padding-left:20px;
+	}
+
+/*----------------------------center_content-------------------------------*/
+#center_content
+{
+   width:780px;
+   height:673px;
+   float:left;
+   margin-left:24px;
+}
+
+#center_title_content
+{
+   width:780px;
+   height:46px;
+   float:left;
+   margin-top:24px;
+}
+
+#center_title
+{
+   width:190px;
+   height:23px;
+   float:left;
+   margin-left:10px;
+   font-weight:bold;
+   letter-spacing:2px;
+   font-size:14px;
+   text-align:left;
+}
+
+#center_title_cutline
+{
+   width:763px;
+   height:1px;
+   float:left;
+   background-color:#a7a5af;
+   margin-left:10px;
+}

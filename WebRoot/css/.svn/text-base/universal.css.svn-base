@@ -1,0 +1,237 @@
+@charset "utf-8";
+/*universal CSS Document */
+
+/* all */
+::-webkit-input-placeholder  { color:#999; }
+input:-moz-placeholder { color: #999; }
+input{font-family:Verdana, Arial, Helvetica, sans-serif,"\5b8b\4f53"}
+input, label{ vertical-align:middle;}
+form.ylzform{
+	background:#F9FBFA;
+	padding:10px;
+}
+form.ylzform label.error {
+	margin-left: auto;
+	width: 250px;
+}
+
+form.ylzform label.form_th{
+	width:8em;
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+}
+form.ylzform ol li{ line-height:30px;}
+.ylz_input {
+	width:180px;
+	height:20px;
+	line-height:20px;
+	background:#FFFFFF;
+	vertical-align:middle;
+	border:1px solid #B8B8B8;
+}
+.line_msg {
+	color:#999;
+}
+.red {
+	color:#F00;
+}
+.ylz_select {
+	vertical-align:middle;
+	width:180px;
+	height:20px;
+	line-height:20px;
+	background:#FFFFFF;
+	vertical-align:middle;
+	border:1px solid #B8B8B8;
+}
+span.check_ok {
+	width:22px;
+	height:22px;
+	line-height:22px;
+	display:inline-block;
+	background:url("../i/check.png") -1px -5px no-repeat;
+	vertical-align:middle;
+	margin:0 5px 0 20px;
+}
+span.check_f {
+	width:22px;
+	height:22px;
+	line-height:22px;
+	display:inline-block;
+	background:url("../i/check_f.png") -1px -1px no-repeat;
+	vertical-align:middle;
+	margin:0 5px 0 20px;
+}
+.clr {
+	clear:both;
+	font-size:0px;
+	visibility:hidden;
+}
+.hidden {
+	display:none;/*visibility:hidden;*/
+}
+.checkmsg{ 
+ 	 width:200px;
+	 margin-left:20px;
+}
+.dark{ color:#333;}
+
+.ml500{ margin-left:500px;}
+.mt10{ margin-top:10px;}
+.mlr5{ margin:0 5px;}
+.mlr10{ margin:0 10px;}
+.ml24{ margin-left:24px;}
+.mr24{ margin-right:24px;}
+.ml5{ margin-left:5px;}
+.mr5{ margin-right:5px;}
+
+.p10{ padding:10px;}
+.plr10{ padding:0 10px;}
+.pl10{ padding-left:10px;}
+.pr10{ padding-right:10px;}
+.pl5{ padding-left:5px;}
+.pr5{ padding-right:5px;}
+.ptb10{ padding:10px 0;}
+.pt10{ padding-top:10px;}
+
+.w_100{ width:100px;}
+.w_200{ width:200px;}
+.w_300{ width:300px;}
+.w_400{ width:400px;} 
+.w_700{ width:700px;} 
+
+.fll{ float:left;}
+.flr{ float:right;}
+.text-right{ text-align:right;}
+.ovh{ overflow:hidden;}
+.num{ font:Tahoma,Arial,Helvetica,sans-serif;}
+.del{ text-decoration:line-through;}
+.brd_b{ border-bottom: 1px solid #D2D2D2;}
+
+/*水平分割线*/
+.hr_dashed_1{ height:1px;border:none;border-top:1px dashed #D5D5D5;}
+.hr_solid_1{ height:1px;border:none;border-top:1px solid #D5D5D5; margin:10px 0;}
+.hr_solid_2{ height:2px;border:none;border-top:2px solid #D5D5D5;}
+.hr_double_3{ height:3px;border:none;border-top:3px double #D5D5D5;}
+.hr_ridge_5{ height:5px;border:none;border-top:5px ridge #efefef;}
+.hr_groove_6{ height:10px;border:none;border-top:10px groove #efefef;}
+
+/* 通用按钮基本样式*/
+.button,.button_blue,.button_small,.button_disable {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 12px/100% Arial, Helvetica, sans-serif;
+	padding: 0 10px;
+	/*text-shadow: 0 1px 1px rgba(0,0,0,.3);*/
+	-webkit-border-radius: .4em; 
+	-moz-border-radius: .4em;
+	border-radius: .4em;
+	/*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+	/*-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover,.button_blue:hover,.button_small:hover,.button_disable:hover {
+	text-decoration: none;
+}
+.button:active,.button_blue:active,.button_small:active,.button_disable:active{
+	position: relative;
+	top: 1px;
+}
+
+/* loading */
+.loading16{ height:16px;}
+.loading20{ height:20px;}
+.loading32{ height:32px;}
+.loading16 .txt,
+.loading20 .txt,
+.loading32 .txt{ 
+	padding-left:5px;
+}
+.loading16 .txt{ line-height:16px;}
+.loading20 .txt{ line-height:20px;}
+.loading32 .txt{ line-height:32px;}
+.loading_168{ width:170px; text-align:center;}
+.loading_400{ width:400px; height:300px;}
+
+/* infotip */
+/*infotip_a-----*/
+.infotip_a{ float:left; height:26px; line-height:26px;}
+.infotip_a span{ background:url(../images/ico_infotip.png) no-repeat; padding:2px 0 2px 22px;}
+
+.infotip_a .it_error,
+.infotip_a .it_stop,
+.infotip_a .it_ok,
+.infotip_a .it_alert,
+.infotip_a .it_notice,
+.infotip_a .it_tips,
+.infotip_a .it_attention,
+.infotip_a .it_question
+{
+	padding:0 5px 0 3px;}
+
+.infotip_a .it_error{ background:#FFF3F3; border:1px solid #FF9F9F; }
+.infotip_a .it_error span{ background-position:0 -2px;}
+
+.infotip_a .it_stop{ background:#FFF3F3; border:1px solid #FF9F9F;}
+.infotip_a .it_stop span{ background-position:0 -42px;}
+
+.infotip_a .it_ok{ background:#F0FFE6; border:1px solid #77D03D;}
+.infotip_a .it_ok span{ background-position:0 -82px;}
+
+.infotip_a .it_alert{ background:#FFF5E6; border:1px solid #FF9E5C;}
+.infotip_a .it_alert span{ background-position:0 -122px;}
+
+.infotip_a .it_notice{ background:#FFF5E6; border:1px solid #FF9E5C;}
+.infotip_a .it_notice span{ background-position:0 -162px;}
+
+.infotip_a .it_tips{ background:#FFF5E6; border:1px solid #FF9E5C;}
+.infotip_a .it_tips span{ background-position:0 -202px;}
+
+.infotip_a .it_attention{ background:#E6F5FF; border:1px solid #6AC4FF;}
+.infotip_a .it_attention span{ background-position:0 -242px;}
+
+.infotip_a .it_question{ background:#F3F3F3; border:1px solid #d2d2d2;}
+.infotip_a .it_question span{ background-position:0 -282px;}
+
+/*infotip_b-------*/
+.infotip_b{ float:left;}
+.infotip_b span{ background:url(../images/ico_infotip.png) no-repeat; padding:2px 0 2px 22px;}
+
+.infotip_b .it_error{ background:none;}
+.infotip_b .it_error span{ background-position:0 -2px;}
+
+.infotip_b .it_stop{ background:none;}
+.infotip_b .it_stop span{ background-position:0 -42px;}
+
+.infotip_b .it_ok{ background:none;}
+.infotip_b .it_ok span{ background-position:0 -82px;}
+
+.infotip_b .it_alert{ background:none;}
+.infotip_b .it_alert span{ background-position:0 -122px;}
+
+.infotip_b .it_notice{ background:none;}
+.infotip_b .it_notice span{ background-position:0 -162px;}
+
+.infotip_b .it_tips{ background:none;}
+.infotip_b .it_tips span{ background-position:0 -202px;}
+
+.infotip_b .it_attention{ background:none;}
+.infotip_b .it_attention span{ background-position:0 -242px;}
+
+.infotip_b .it_question{ background:none;}
+.infotip_b .it_question span{ background-position:0 -282px;}
+
+/* instruction */
+.instruction h4{ color:#434343; font-size:12px;}
+.instruction .info{ color:#434343; line-height:18px; padding:5px 10px;}
+.instruction .info p{ text-indent:2em;}
+.bg123{ border:1px dashed #b5b5b5;}
+.menubar{ background: #FFE3B5; padding:8px 10px 5px 10px; vertical-align:middle;}
+.menubar input.button{ float:right; margin-top:-3px; }
