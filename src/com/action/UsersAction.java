@@ -1,33 +1,40 @@
 package com.action;
 
 import org.activiti.engine.ProcessEngine;
-import org.activiti.engine.runtime.ProcessInstance;
 
 import com.model.Users;
-import com.opensymphony.xwork2.ActionSupport;
 import com.service.UsersService;
+import com.util.BaseAction;
 
 /**
- * @author lintz
+ * @description:用户管理Acion类
+ * @date: 2013-8-13 下午2:55:32
+ * @author: lintz
  */
 @SuppressWarnings("serial")
-public class UsersAction extends ActionSupport {
+public class UsersAction extends BaseAction {
 	private Users users;
 	private UsersService usersService;
 	private ProcessEngine processEngine;
+	private String loginName;
+	private String password;
+
 	/**
 	 * 用户登陆
 	 * @return
 	 */
 	public String login() {
-		String deploymentId = processEngine.getRepositoryService().createDeployment().addClasspathResource("deployments/work-1.0.bpmn20.xml").deploy().getId();
-		ProcessInstance processInstance = processEngine.getRuntimeService().startProcessInstanceById(deploymentId);
-		String procId = processInstance.getId();
-		System.out.println(procId);
-		users = new Users();
-		users.setUserId(deploymentId);
-		this.usersService.addUsers(users);
-		return SUCCESS;
+		// String deploymentId = processEngine.getRepositoryService().createDeployment().addClasspathResource("deployments/work-1.0.bpmn20.xml").deploy().getId();
+		// ProcessInstance processInstance = processEngine.getRuntimeService().startProcessInstanceById(deploymentId);
+		// String procId = processInstance.getId();
+		// System.out.println(procId);
+		String rs = usersService.checkUsers(loginName, password);
+		if (rs.equals("suc")) {
+			return SUCCESS;
+		} else if (rs.equals("error")) {
+			return AGAIN;
+		}
+		return NOIN;
 	}
 
 	public String addUsers() {
@@ -60,6 +67,22 @@ public class UsersAction extends ActionSupport {
 
 	public void setProcessEngine(ProcessEngine processEngine) {
 		this.processEngine = processEngine;
+	}
+
+	public String getLoginName() {
+		return loginName;
+	}
+
+	public void setLoginName(String loginName) {
+		this.loginName = loginName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

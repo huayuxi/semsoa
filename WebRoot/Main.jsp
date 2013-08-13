@@ -13,9 +13,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0"/>    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
 	<meta http-equiv="description" content="This is my page"/>
+	<link href="css/leftFrm.css" rel="stylesheet" type="text/css" />
   </head>
-  
   <body>
-  
+  	
   </body>
 </html>

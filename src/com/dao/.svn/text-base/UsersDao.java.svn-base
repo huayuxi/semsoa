@@ -29,4 +29,11 @@ public interface UsersDao {
 	 * @return true or false
 	 */
 	public Boolean updateUsers(Users users);
+	
+	/**
+	 * 查询用户
+	 * @param loginName 登录名
+	 * @return users对象
+	 */
+	public Users queryUser(String loginName);
 }

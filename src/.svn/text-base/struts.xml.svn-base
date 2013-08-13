@@ -5,8 +5,8 @@
 <struts>
 	<package name="/" extends="struts-default">
 		<action name="login" class="usersAction" method="login">
-			<result name="success">ok.jsp</result>
-			<result name="error">error.jsp</result>
+			<result name="success">index.jsp</result>
+			<result name="again">login.jsp</result>
 		</action>
 	</package>
 </struts>

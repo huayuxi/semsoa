@@ -29,4 +29,11 @@ public interface UsersService {
 	 * @return true or false
 	 */
 	public Boolean updateUsers(Users users);
+	/**
+	 * 校验用户
+	 * @param loginName 用户名
+	 * @param password 密码明文
+	 * @return "no" 不存在  "error" 帐号密码不符   "suc" 校验成功
+	 */
+	public String checkUsers(String loginName,String password);
 }

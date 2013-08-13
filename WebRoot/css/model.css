@@ -8,6 +8,7 @@ body {
    width:100%;
    height:50px;
    position:relative;
+   background: url(../images/top.jpg) no-repeat;
 }
 .t_top td{
 	vertical-align:top;
@@ -15,7 +16,6 @@ body {
 .top_middle,.top_right{
 	height:50px;
 	padding-left:30px;
-	background:#FCAA2D;
 	}
 	
 .top_middle a{
@@ -25,33 +25,7 @@ body {
 	height:50px;
 	margin:0 4px;
 	}
-.top_middle a.btn_home{
-	background:url(../Images/btn_home_off.jpg) no-repeat;
-	}
-.top_middle a.btn_home:hover{
-	background:url(../Images/btn_home_on.jpg) no-repeat;
-	}
-	
-.top_middle a.btn_backward{
-	background:url(../Images/btn_backward_off.jpg) no-repeat;
-	}
-.top_middle a.btn_backward:hover{
-	background:url(../Images/btn_backward_on.jpg) no-repeat;
-	}	
 
-.top_middle a.btn_forward{
-	background:url(../Images/btn_forward_off.jpg) no-repeat;
-	}
-.top_middle a.btn_forward:hover{
-	background:url(../Images/btn_forward_on.jpg) no-repeat;
-	}
-
-.top_middle a.btn_reload{
-	background:url(../Images/btn_reload_off.jpg) no-repeat;
-	}
-.top_middle a.btn_reload:hover{
-	background:url(../Images/btn_reload_on.jpg) no-repeat;
-	}
 
 .top_right{
 	width:340px;
@@ -67,7 +41,6 @@ body {
 	margin-top:6px;
 	}
 .top_right span.exit{
-	background:url(../Images/ico_exit.jpg) no-repeat left center;
 	padding-left:16px;
 	}
 .top_right span.exit a{
@@ -80,7 +53,6 @@ body {
 	}
 .top_right span.userInfo{
 	color:#434343;
-	background:url(../Images/ico_user.jpg) no-repeat left center;
 	padding-left:20px;
 	}
 

@@ -6,6 +6,7 @@
 <link href="css/page.css" rel="stylesheet" type="text/css" />
 <link id="cssfile" href="themes/skyblue/style/skyblue_skin" rel="stylesheet" type="text/css" />
 <link href="css/model.css" rel="stylesheet" type="text/css" />
+<link href="css/leftFrm.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="js/common/jquery-1.8.1.min.js"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
   <!--header_begin-->
   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="t_top">
     <tr>
-      <td width="208"><img src="images/logo.jpg" width="209" height="50" alt="智联信通综合管理系统" /></td>
+      <td width="208"></td>
       <td class="top_middle">
       	<a href="login.html" class="btn_home" target="mainFrame"></a>
        	<a href="javascript:void();" onclick="window.history.back();" class="btn_backward"></a> 
@@ -22,7 +23,7 @@
       </td>
       <td class="top_right">
      	<span class="exit"><a href="#">退出</a></span> 
-      	<span class="userInfo">欢迎您，Admin，今天是2012年5月25日 星期五</span>
+      	<span class="font_w">欢迎您，Admin，今天是2012年5月25日 星期五</span>
       </td>
     </tr>
   </table>
