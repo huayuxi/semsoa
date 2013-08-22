@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
 <frameset rows="50,*" cols="*" frameborder="no" border="0" framespacing="0">
   <frame src="top.html" name="topFrame" scrolling="no" noresize="noresize" id="topFrame" title="topFrame" />
-  <frameset rows="*" cols="200,8,*" id="bodyfrm" frameborder="no" border="0" framespacing="0">
+  <frameset rows="*" cols="200,5,*" id="bodyfrm" frameborder="no" border="0" framespacing="0">
     <frame src="left.html" name="leftFrame" scrolling="auto" noresize="noresize" id="leftFrame" title="leftFrame" />
     <frame src="control.html" name="controlFrame" scrolling="no" noresize="noresize" id="controlFrame" title="controlFrame" />
     <frame src="Main.jsp" name="mainFrame" id="mainFrame" title="mainFrame" />

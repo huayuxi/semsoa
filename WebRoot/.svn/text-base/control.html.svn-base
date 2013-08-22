@@ -10,7 +10,8 @@
 
 <body>
 <div id="controlblock_content">
-    <div id="controlblock_btn" class="show" onclick="leftList('bodyfrm', 'controlblock_btn')" title="展开/隐藏"></div>  
+    <!--  <div id="controlblock_btn" class="show" onclick="leftList('bodyfrm', 'controlblock_btn')" title="展开/隐藏"></div> --> 
 </div>
 </body>
 </html>
+

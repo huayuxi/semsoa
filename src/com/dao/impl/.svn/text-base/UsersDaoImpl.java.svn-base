@@ -3,6 +3,8 @@
  */
 package com.dao.impl;
 
+import org.hibernate.Query;
+
 import com.dao.UsersDao;
 import com.model.Users;
 import com.util.BasicHibernateDao;
@@ -59,7 +61,13 @@ public class UsersDaoImpl extends BasicHibernateDao implements UsersDao {
 	 * @return users对象
 	 */
 	public Users queryUser(String loginName) {
-		Users users=(Users) getSession().createQuery("from Users where loginName = ?").setString(1, loginName).list().get(0);
-		return users;
+		try {
+			Query query = getSession().createQuery("from Users where loginName =?");
+			query.setString(0,loginName);
+			Users users = (Users) query.list().get(0);
+			return users;
+		} catch (Exception e) {
+			return null;
+		}
 	}
 }

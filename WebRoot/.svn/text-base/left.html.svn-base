@@ -5,11 +5,44 @@
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3" />
 <meta http-equiv="description" content="this is my page" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link href="css/page.css" rel="stylesheet" type="text/css" />
+<link id="cssfile" href="themes/orange/style/orange_skin.css" rel="stylesheet" type="text/css" />
 <link href="css/leftFrm.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<!--左模块 -->
-	<div id="leftblock_content"></div>
+<div id="leftblock_content">
+   <div id="leftblock_trees">
+        <ul id="browser" class="filetree">
+            <li class="">
+            	<span class="folder">
+            		<a href="" target="mainFrame">待办事项</a>
+            	</span>
+            </li>
+            <li class="">
+            	<span class="folder">
+            		<a href="" target="mainFrame">已办事项</a>
+            	</span>
+            </li>
+            <li class="">
+            	<span class="folder">
+            		<a href="" target="mainFrame">归档事项</a>
+            	</span>
+            </li>
+             <li class="">
+            	<span class="folder">
+            		<a href="" target="mainFrame">工单申请</a>
+            	</span>
+            </li>
+             <li class="">
+            	<span class="folder">
+            		<a href="" target="mainFrame">发文申请</a>
+            	</span>
+            </li>
+        </ul>     
+   </div>
+</div>
+<!--/左模块 -->
 </body>
 </html>

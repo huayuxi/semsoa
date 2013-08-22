@@ -55,6 +55,7 @@ public class UsersServiceImpl implements UsersService {
 		}
 		return "no";
 	}
+	
 	/*----------------------------Get and Set---------------------------------*/
 	public UsersDao getUsersDao() {
 		return usersDao;

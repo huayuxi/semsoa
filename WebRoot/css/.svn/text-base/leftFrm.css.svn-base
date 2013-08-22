@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+* { padding:0; margin:0;}
+body, html {
+    background:url(../images/login_bg.gif);
+}
+
+#leftblock_content
+{
+   width:100%;
+   text-align:center;
+}
+
+#leftblock_nav_top
+{
+   list-style:none; text-align:left;
+   padding:5px 10px;
+   margin:10px 10px 0 0;
+   font-size:14px;
+   color:#f56a0b;
+   background:#FFF;
+   font-family:"微软雅黑";
+}
+
+#leftblock_nav_top span
+{
+   background:url(../themes/orange/images/ico_menu.gif) no-repeat left center; padding-left:20px;
+}
+
+#leftblock_nav_top a:hover
+{
+   text-decoration:underline;
+}
+
+/*------------------------------------tree--------------------------------------*/
+#leftblock_trees { padding:12px 18px;}
+
+#browser li{font-size:14px; text-align:left; }
+.treeview ul { background;none;}
+
+.treeview, .treeview ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.treeview ul {
+	margin-top: 4px;
+}
+.treeview .hitarea {
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+.treeview li {
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+}
+.treeview a.selected {
+	background-color: #eee;
+}
+#treecontrol {
+	margin: 1em 0;
+	display: none;
+}
+.treeview .hover {
+	color: red;
+	cursor: pointer;
+}
+.treeview li.collapsable, .treeview li.expandable {
+	background-position: 0 -176px;
+}
+.treeview .expandable-hitarea {
+	background-position: -80px -3px;
+}
+.treeview li.last {
+	background-position: 0 -1766px
+}
+.treeview li.lastCollapsable, .treeview li.lastExpandable {
+}
+.treeview li.lastCollapsable {
+	background-position: 0 -111px
+}
+.treeview li.lastExpandable {
+	background-position: -32px -67px
+}
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea {
+	background-position: 0;
+}
+
+.filetree li {
+	padding: 4px 0 4px 12px;
+}
+.filetree span.folder, .filetree span.file {
+	display: block;
+}
+.filetree span.folder{
+	padding:0;
+	font-size:12px;
+	font-weight:bold;
+	color:#434343;
+	}
+.filetree span.file{
+	font-size:12px;
+	color:#434343;
+	padding: 1px 0 1px 16px;
+	}
+.filetree span.file a{
+	color:#434343;
+	text-decoration:none;
+	}
+.filetree span.file a:hover{
+	color:#434343;
+	text-decoration:underline;
+	}
+.filetree span.folder {
+	background:url(../themes/orange/images/ico_arrow_up.gif) right center no-repeat;
+}
+.filetree li.expandable span.folder {
+	background:url(../themes/orange/images/ico_arrow_down.gif) right center no-repeat;
+}
+.filetree span.file {
+	background:url(../themes/orange/images/ico_arrow_right.gif) 0 2px no-repeat;
+}
+

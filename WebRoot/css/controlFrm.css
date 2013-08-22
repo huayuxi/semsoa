@@ -1,13 +1,13 @@
 @charset "utf-8";
 /*controlFrm CSS Document */
-body { background-color:#ffffff;}
+body { background:url(../images/contractionbar_bg.gif) repeat-y;}
 
 #controlblock_btn{
-	width:8px;
+	width:4px;
    	height:101px;
 	position:absolute;
 	left:0;
-	top:30%;
+	top:44%;
 	display:block;
   	cursor:pointer;
 	}
